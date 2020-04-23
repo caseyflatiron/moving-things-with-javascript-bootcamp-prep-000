@@ -2,10 +2,11 @@ const app = "I don't do much."
 
 var dodger = document.getElementById('dodger')
 
+console.log('working')
+
 function moveDodgerLeft() {
   var leftNumbers = dodger.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
-  console.log(`${leftNumbers}`)
   if (left > 0) {
     dodger.style.left = `${left - 1}px`
   }
